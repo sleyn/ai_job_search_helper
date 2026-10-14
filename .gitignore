@@ -1,0 +1,31 @@
+# Your personal job-search data stays on your machine.
+# The template ships the playbooks; everything /setup and your daily work create is ignored
+# (the only exception is the empty folder placeholders and the fictional examples).
+# If you want to back your own data up to a PRIVATE repo, delete the "personal data" block.
+
+# --- personal data ---
+reference/evidence/*
+!reference/evidence/.gitkeep
+resumes/*_Resume_*.md
+!resumes/Jane_Doe_Resume_Example_Co_2026-01-15.md
+cover_letters/*_Cover_Letter_*.md
+cover_letters/*.docx
+!cover_letters/Jane_Doe_Cover_Letter_Example_Co_2026-01-15.md
+job_descriptions/20*/
+interview_prep/20*/
+interview_prep/mock_practice/*
+!interview_prep/mock_practice/.gitkeep
+onboarding/20*/
+linkedin_profile_improvement/profiles/*
+linkedin_profile_improvement/linkedin_profile_data/*
+linkedin_profile_improvement/improvement_suggestions/*
+!linkedin_profile_improvement/*/.gitkeep
+
+# --- system / tooling ---
+.DS_Store
+.claude/settings.local.json
+.claude/worktrees/
+node_modules/
+__pycache__/
+*.pyc
+.venv/

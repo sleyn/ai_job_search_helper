@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fit Analysis: [Company] – [Job Title]</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 24px; color: #222; background: #fafafa; }
+  h1 { font-size: 1.6em; margin-bottom: 4px; }
+  .meta { color: #666; font-size: 0.95em; margin-bottom: 28px; }
+  .score-box { display: flex; align-items: center; gap: 24px; background: #1a3a5c; color: #fff; border-radius: 10px; padding: 22px 30px; margin-bottom: 32px; }
+  .score-number { font-size: 3.2em; font-weight: bold; line-height: 1; }
+  .score-label { font-size: 1.1em; opacity: 0.85; }
+  .score-verdict { font-size: 1.05em; background: #2e6da4; border-radius: 6px; padding: 6px 14px; margin-top: 6px; display: inline-block; }
+  h2 { font-size: 1.15em; border-bottom: 2px solid #ddd; padding-bottom: 5px; margin-top: 32px; color: #1a3a5c; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.95em; }
+  th { background: #e8eef4; text-align: left; padding: 8px 12px; }
+  td { padding: 8px 12px; border-bottom: 1px solid #eee; vertical-align: top; }
+  .strong { color: #1a7a2e; font-weight: bold; }
+  .partial { color: #b07a00; font-weight: bold; }
+  .gap { color: #c0392b; font-weight: bold; }
+  .tag { display: inline-block; background: #e0eedf; color: #1a6e2e; border-radius: 4px; padding: 2px 8px; margin: 2px 3px 2px 0; font-size: 0.88em; }
+  .tag.miss { background: #fce8e8; color: #a02020; }
+  .tag.partial { background: #fef3dc; color: #7a5000; }
+  ul { margin: 6px 0; padding-left: 20px; }
+  li { margin-bottom: 4px; }
+  .bottom-line { background: #f0f6ff; border-left: 4px solid #2e6da4; padding: 16px 20px; border-radius: 0 8px 8px 0; margin-top: 10px; }
+</style>
+</head>
+<body>
+
+<h1>Fit Analysis: [Company] — [Job Title]</h1>
+<!-- meta: industry/focus | location | salary range | analysis date -->
+<div class="meta">[Industry / Focus Area] | [Location] | [Salary Range] | Analyzed [YYYY-MM-DD]</div>
+
+<div class="score-box">
+  <div>
+    <!-- score: 0–100 -->
+    <div class="score-number">[##]<span style="font-size:0.5em">/100</span></div>
+  </div>
+  <div>
+    <div class="score-label">Overall Fit Score</div>
+    <!-- verdict examples: "Strong Match — Apply with tailored framing" | "Good Match — Apply" | "Moderate Match — Apply selectively" | "Weak Match — Skip or stretch" -->
+    <div class="score-verdict">[Verdict]</div>
+  </div>
+</div>
+
+<!-- COMPETENCY FIT -->
+<h2>Competency Fit Breakdown</h2>
+<table>
+  <tr><th>Competency</th><th>JD Weight</th><th>Fit</th><th>Evidence</th></tr>
+  <!-- JD Weight: Required | Preferred | Nice-to-have -->
+  <!-- Fit class: strong | partial | gap -->
+  <tr>
+    <td>[Competency]</td>
+    <td>[Required / Preferred]</td>
+    <td class="strong">STRONG</td>
+    <td>[Evidence from the candidate's background]</td>
+  </tr>
+  <tr>
+    <td>[Competency]</td>
+    <td>[Required / Preferred]</td>
+    <td class="partial">PARTIAL</td>
+    <td>[Evidence from the candidate's background]</td>
+  </tr>
+  <tr>
+    <td>[Competency]</td>
+    <td>[Required / Preferred]</td>
+    <td class="gap">GAP</td>
+    <td>[Evidence from the candidate's background]</td>
+  </tr>
+  <!-- Add/remove rows as needed -->
+</table>
+
+<!-- KEYWORD MATCH -->
+<h2>Keyword Match</h2>
+<p><strong>Matched:</strong></p>
+<!-- Green tags: keywords from the JD that the candidate clearly meets -->
+<span class="tag">[keyword]</span>
+<span class="tag">[keyword]</span>
+
+<p><strong>Missing or weak:</strong></p>
+<!-- Red tags: clear gaps -->
+<span class="tag miss">[keyword]</span>
+<!-- Yellow tags: partial matches -->
+<span class="tag partial">[keyword]</span>
+
+<!-- STRENGTHS TO HIGHLIGHT -->
+<h2>Strengths to Highlight</h2>
+<ul>
+  <li><strong>[Strength theme]:</strong> [Specific framing recommendation with evidence]</li>
+  <li><strong>[Strength theme]:</strong> [Specific framing recommendation with evidence]</li>
+  <li><strong>[Strength theme]:</strong> [Specific framing recommendation with evidence]</li>
+  <!-- Add/remove items as needed -->
+</ul>
+
+<!-- CRITICAL GAPS + RESUME SUGGESTIONS -->
+<h2>Critical Gaps &amp; Resume Suggestions</h2>
+<table>
+  <tr><th>Gap</th><th>Severity</th><th>Mitigation</th></tr>
+  <!-- Severity class: gap (NOTABLE/CRITICAL) | partial (MODERATE) | strong (MINOR) -->
+  <tr>
+    <td>[Gap description]</td>
+    <td class="gap">NOTABLE</td>
+    <td>[Mitigation strategy]</td>
+  </tr>
+  <tr>
+    <td>[Gap description]</td>
+    <td class="partial">MODERATE</td>
+    <td>[Mitigation strategy]</td>
+  </tr>
+  <!-- Add/remove rows as needed -->
+</table>
+
+<!-- BOTTOM LINE -->
+<h2>Bottom Line</h2>
+<div class="bottom-line">
+  <!-- 3–5 sentence summary: apply/skip recommendation, key reframes needed, differentiators, compensation alignment -->
+  [Apply/Skip recommendation]. [Key strengths summary]. [Critical reframes or gaps]. [Differentiators]. [Compensation note if relevant].
+</div>
+
+</body>
+</html>
